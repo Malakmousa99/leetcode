@@ -5,6 +5,7 @@ public:
         int lastIndex = 0;
         int minNumber = 0;
         int endJump = 0; 
+        
       if(n==1){
         return 0;
       }
