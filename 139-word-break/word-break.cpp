@@ -10,7 +10,9 @@ public:
 
          for(int i=1 ; i<= length ; i++){
             for(int j=0; j<i; j++){
-                 if(dp[j] && wordSet.find(s.substr(j, i - j)) != wordSet.end()){
+
+                string word = s.substr(j, i - j);
+                 if(dp[j] && wordSet.count(word)> 0){
                     dp[i] = true;
                     break;
                 }
