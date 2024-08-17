@@ -8,7 +8,7 @@ public:
         unordered_map<char,string> charToWord;
         unordered_map<string,char> wordToChar;
 
-             for(int i=0; i< pattern.size() ; i++) {
+             for(int i=0; i< pattern.size(); i++) {
 
                 char ch  = pattern[i];
                 string s = words[i];
@@ -18,7 +18,7 @@ public:
                  if(wordToChar.find(s) != wordToChar.end())
                      return false;
 
-             charToWord[ch] = s;
+              charToWord[ch] = s;
               wordToChar[s] = ch;
 
             }    else{
@@ -26,7 +26,6 @@ public:
                     return false;
                    
                 }
-           
              }
 
               return true;
