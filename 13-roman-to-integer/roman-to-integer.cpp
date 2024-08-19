@@ -18,7 +18,7 @@ public:
            
             int currentVal = romanMap[s[i]];
 
-            if (i + 1 < s.size() && romanMap[s[i]] < romanMap[s[i + 1]]) {
+            if (romanMap[s[i]] < romanMap[s[i + 1]]) {
                 summation-= currentVal; 
             } else {
                 summation += currentVal; 
