@@ -12,20 +12,19 @@ public:
             {'M', 1000}
         };
 
-        int sum = 0;
-        int length = s.size();
-
-        for (int i = 0; i < length; ++i) {
+        int summation = 0;
+    
+        for (int i = 0; i < s.size(); ++i) {
            
             int currentVal = romanMap[s[i]];
 
-            if (i + 1 < length && romanMap[s[i]] < romanMap[s[i + 1]]) {
-                sum-= currentVal; 
+            if (i + 1 < s.size() && romanMap[s[i]] < romanMap[s[i + 1]]) {
+                summation-= currentVal; 
             } else {
-                sum += currentVal; 
+                summation += currentVal; 
             }
         }
 
-        return sum ;
+        return summation ;
     }
 };
