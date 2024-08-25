@@ -7,8 +7,8 @@ public:
         int maxLength = 0;
 
         for(int r=0; r<s.size(); r++){
-            while(map[s[r]] != 0){
-                map[s[L]] = 0;
+            while(map[s[r]] != 0){// this letter is exist in map
+                map[s[L]] = 0;// remove it
                 L++;
             }
             map[s[r]]++;
